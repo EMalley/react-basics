@@ -14,9 +14,10 @@ function Feedbacklist({ feedback, handleDelete }) {
         {feedback.map((item) => (
           <motion.div
             key={item.id}
-            intial={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
             animate={{ opacity: 1 }}
-            exit={{ opactiy: 0 }}
+            exit={{ opacity: 0 }}
           >
             <FeedbackItem
               key={item.id}
