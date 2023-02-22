@@ -22,11 +22,7 @@ function Feedbacklist({ handleDelete }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <FeedbackItem
-              key={item.id}
-              item={item}
-              handleDelete={handleDelete}
-            />
+            <FeedbackItem key={item.id} item={item} handleDelete />
           </motion.div>
         ))}
       </AnimatePresence>
