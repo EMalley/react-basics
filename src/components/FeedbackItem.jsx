@@ -1,15 +1,12 @@
 import React from 'react'
 import { FaTimes, FaEdit } from 'react-icons/fa'
 import { useContext } from 'react'
-import { useState } from 'react'
 import PropTypes from 'prop-types'
 import Card from './shared/Card'
 import FeedbackContext from '../context/FeedbackContext'
 
 function FeedbackItem({ item }) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext)
-  const [rating, setRating] = useState()
-  const [text, setText] = useState('This is an example')
 
   return (
     <Card>
